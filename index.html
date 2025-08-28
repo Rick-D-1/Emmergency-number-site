@@ -14,7 +14,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="bg-[#f5fff6] h-[100vh]">
+<body class="bg-[#f5fff6] h-full">
     <!-- nav Bar -->
     <div class="navbar bg-base-100 shadow-sm flex justify-between">
         <div class="flex items-center">
@@ -22,16 +22,17 @@
             <a class="font-bold text-xl text-[#006747]">Emmergency <br>service</a>
         </div>
         <div class="flex gap-3">
-            <div class="flex items-center    w-[100px] rounded-3xl justify-center gap-1.5 bg-[#ECFFF0] py-1">
+            <div
+                class="flex items-center    w-[60px] md:w-[100px] rounded-3xl justify-center gap-1.5 bg-[#ECFFF0] py-1 ">
                 <p class="font-bold">0</p>
-                <img class=" h-[30px]" src="assets/heart.png" alt="">
+                <img class=" h-[20px] md:h-[30px]" src="assets/heart.png" alt="">
             </div>
-            <div class="flex items-center    w-[100px] rounded-3xl justify-center gap-1.5 bg-[#ECFFF0]">
+            <div class="flex items-center   w-[60px] md:w-[100px] rounded-3xl justify-center gap-1.5 bg-[#ECFFF0]">
                 <p class="font-bold">0</p>
-                <img class=" h-[25px]" src="assets/coin.png" alt="">
+                <img class=" h-[20px] md:h-[25px]" src="assets/coin.png" alt="">
             </div>
-            <div class="flex items-center    w-[100px] rounded-3xl justify-center gap-1.5 bg-[#00A63E]">
-                <p class="font-bold text-white"><span>0</span> Copy</p>
+            <div class="flex items-center    w-[60px] md:w-[100px] rounded-3xl justify-center gap-1.5 bg-[#00A63E]">
+                <p class="font-bold text-white text-sm md:text-lg"><span>0</span> Copy</p>
 
             </div>
         </div>
@@ -41,13 +42,15 @@
         class=" bg-[radial-gradient(circle_at_center,#006747,#013223)] h-[231px] flex flex-col justify-center items-center w-full text-white">
         <img class="h-[90px] w-[90px]" src="assets/logo-dark.png" alt="">
         <h1 class="font-bold text-2xl py-3">Emergency Service Directory</h1>
-        <p>Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of
+        <p class="text-center ">Government Emergency Services at Your Fingertip – A Project by Government of the
+            People’s
+            Republic of
             Bangladesh</p>
     </div>
 
     <!-- card section -->
-    <div class="main-card-parent  mt-8">
-        <div class="card-section grid grid-cols-3 gap-4 max-w-[1100px] ml-5 ">
+    <div class="main-card-parent  my-8 fle-col md:flex gap-5 justify-center">
+        <div class="card-section grid grid-cols-1 gap-4 sm:grid-cols-2  md:grid-cols-3">
             <div class=" card bg-white h-[270px]   p-4 shadow-sm">
                 <div class="flex justify-between items-center">
                     <div class="bg-[#FFE3E2] p-2 rounded-xl">
@@ -293,7 +296,7 @@
                     <button class="border-1 w-[150px] rounded-lg py-1 bg-white border-gray-300 text-gray-400"> <span><i
                                 class="fa-regular fa-copy"></i></span>
                         Copy</button>
-                    <button class="border-1 w-[150px] rounded-lg py-1 bg-[#00A63E]  text-white">
+                    <button class="w-[150px] rounded-lg py-1 bg-[#00A63E]  text-white">
                         <span><i class="fa-solid fa-phone"></i></span>
                         Call</button>
 
@@ -301,10 +304,26 @@
 
             </div>
         </div>
-        <div class="card-history">
+        <!-- History -->
+        <div class="card-history sm:p-2 p-2 mt-5 md:mt-0 bg-white shadow-sm rounded-lg">
+            <div class=" flex justify-between p-5 ">
+                <h1 class="font-semibold text-lg"><span class="text-gray-400"><i class="fa-regular fa-clock"></i></span>
+                    Call
+                    History</h1>
+                <div>
+                    <button
+                        class="w-[80px] rounded-2xl py-1 bg-[#00A63E]  text-white text-lg font-semibold">Clear</button>
+                </div>
+            </div>
+            <div class="flex p-5 md:w-[20vw] bg-gray-100 rounded-2xl mx-5 my-2 justify-between items-center">
+                <div>
+                    <h1 class="font-semibold ">Fire Service Number</h1>
+                    <p class="text-gray-400 ">999</p>
+                </div>
+                <p>11.36.58 Am</p>
+            </div>
 
         </div>
-    </div>
 
 </body>
 
