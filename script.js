@@ -54,7 +54,8 @@ document.getElementById("heart-btn-8").addEventListener('click', function () {
 
 });
 
-// Get the copy counter element
+// copy Function
+
 const copyCounterElement = document.getElementById("copy-number");
 let copyCount = parseInt(copyCounterElement.innerText) || 0;
 
@@ -82,7 +83,6 @@ for (let i = 0; i < copyButtons.length; i++) {
 }
 
 
-
 // callbtn
 
 for (let i = 0; i <= 8; i++) {
@@ -93,7 +93,6 @@ for (let i = 0; i <= 8; i++) {
     } else {
         buttonId = "call-btn-" + i;
     }
-
 
     let button = document.getElementById(buttonId);
 
@@ -126,14 +125,10 @@ const historyList = document.createElement("div");
 historyList.id = "history-list";
 historyContainer.appendChild(historyList);
 
-
-
-
 function getTimeNow() {
     const now = new Date();
     return now.toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit", second: "2-digit" });
 }
-
 
 function handleCall(alertId, numberId) {
     const alertText = document.getElementById(alertId).innerText;
@@ -182,8 +177,6 @@ function handleCall(alertId, numberId) {
 
     clearHistory();
 }
-
-
 
 // Clear Button
 document.querySelector(".card-history button").addEventListener("click", () => {
